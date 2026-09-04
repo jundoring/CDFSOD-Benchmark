@@ -1,0 +1,70 @@
+diff --git a/detectron2/data/datasets/builtin.py b/detectron2/data/datasets/builtin.py
+index 478f2fb..651b503 100644
+--- a/detectron2/data/datasets/builtin.py
++++ b/detectron2/data/datasets/builtin.py
+@@ -372,6 +372,14 @@ if __name__.endswith(".builtin"):
+     _CD_root = os.getenv("DETECTRON2_DATASETS", "datasets/")
+     register_all_CD(_CD_root)
+     register_sixray_seed_shots(_CD_root)
++    from datasets.register_txlpbc_hituav import register_txlpbc_hituav
++    register_txlpbc_hituav()
++    from datasets.register_txlpbc_exact_instance import register_txlpbc_exact_instance
++    register_txlpbc_exact_instance()
++    from datasets.register_sixray_exact_instance import register_sixray_exact_instance
++    register_sixray_exact_instance()
++    from datasets.register_hituav_exact_instance import register_hituav_exact_instance
++    register_hituav_exact_instance()
+ 
+ 
+ 
+diff --git a/lib/categories.py b/lib/categories.py
+index dd7d784..f57c65c 100644
+--- a/lib/categories.py
++++ b/lib/categories.py
+@@ -107,6 +107,46 @@ for _shot in (1, 5):
+         SEEN_CLS_DICT[f'SIXRAY_{_shot}shot_seed{_seed}'] = CLASS_NAME['SIXRAY_classes']
+         ALL_CLS_DICT[f'SIXRAY_{_shot}shot_seed{_seed}'] = CLASS_NAME['SIXRAY_classes']
+ 
++# TXL-PBC / HIT-UAV preliminary seed1 few-shot fine-tune (FT-FSOD counterpart).
++# Keys must match the DATASETS.TRAIN[0] name registered in
++# datasets/register_txlpbc_hituav.py, since build_evaluator() in
++# tools/train_net.py looks up SEEN/ALL_CLS_DICT[cfg.DATASETS.TRAIN[0]] directly.
++CLASS_NAME['TXLPBC_classes'] = ['WBC', 'RBC', 'Platelets']
++CLASS_NAME['HITUAV_classes'] = ['Person', 'Car', 'Bicycle', 'OtherVehicle']
++
++for _shot in (1, 5, 10):
++    SEEN_CLS_DICT[f'txlpbc_train_{_shot}shot_seed1'] = CLASS_NAME['TXLPBC_classes']
++    ALL_CLS_DICT[f'txlpbc_train_{_shot}shot_seed1'] = CLASS_NAME['TXLPBC_classes']
++    SEEN_CLS_DICT[f'hituav_train_{_shot}shot_seed1'] = CLASS_NAME['HITUAV_classes']
++    ALL_CLS_DICT[f'hituav_train_{_shot}shot_seed1'] = CLASS_NAME['HITUAV_classes']
++
++# TXL-PBC exact-K-instance policy (datasets/register_txlpbc_exact_instance.py),
++# all 10 data seeds x {1,5,10} shot - additive, does not touch the K-image
++# txlpbc_train_{shot}shot_seed1 keys above.
++for _shot in (1, 5, 10):
++    for _seed in range(1, 11):
++        _name = f'txlpbc_exact_train_{_shot}shot_seed{_seed}'
++        SEEN_CLS_DICT[_name] = CLASS_NAME['TXLPBC_classes']
++        ALL_CLS_DICT[_name] = CLASS_NAME['TXLPBC_classes']
++
++# SIXray-D fair-conditions exact-K-instance re-run, all 10 seeds
++# (datasets/register_sixray_exact_instance.py, canonical Dataset/SIXray-D
++# root) - additive, does not touch SIXRAY_{shot}shot_seed{seed} above.
++for _shot in (1, 5, 10):
++    for _seed in range(1, 11):
++        _name = f'sixray_exact_train_{_shot}shot_seed{_seed}'
++        SEEN_CLS_DICT[_name] = CLASS_NAME['SIXRAY_classes']
++        ALL_CLS_DICT[_name] = CLASS_NAME['SIXRAY_classes']
++
++# HIT-UAV exact-K-instance, all 10 seeds (datasets/
++# register_hituav_exact_instance.py, canonical Dataset/HIT-UAV root) -
++# additive, does not touch hituav_train_{shot}shot_seed1 above.
++for _shot in (1, 5, 10):
++    for _seed in range(1, 11):
++        _name = f'hituav_exact_train_{_shot}shot_seed{_seed}'
++        SEEN_CLS_DICT[_name] = CLASS_NAME['HITUAV_classes']
++        ALL_CLS_DICT[_name] = CLASS_NAME['HITUAV_classes']
++
+ if __name__ == "__main__":
+     print("COCO_2017_SPLIT_1 (seen)", SEEN_CLS_DICT[COCO_2017_SPLIT_1])
+     print("COCO_2017_SPLIT_1 (unseen)", [c for c in ALL_CLS_DICT[COCO_2017_SPLIT_1] if c not in SEEN_CLS_DICT[COCO_2017_SPLIT_1]])

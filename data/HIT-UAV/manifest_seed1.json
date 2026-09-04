@@ -1,0 +1,47 @@
+{
+  "dataset": "HIT-UAV",
+  "source_split": "train",
+  "source_file": "normal_json\\annotations_std\\train.json",
+  "shot_definition": "instance-exact K-shot: exactly K annotation instances per category (DontCare excluded, 4 official classes only).",
+  "seed": 1,
+  "shots": [
+    1,
+    5,
+    10
+  ],
+  "files": {
+    "train_1shot_seed1.json": {
+      "shot": 1,
+      "num_images": 4,
+      "num_annotations": 4,
+      "class_annotation_counts": {
+        "Person": 1,
+        "Car": 1,
+        "Bicycle": 1,
+        "OtherVehicle": 1
+      }
+    },
+    "train_5shot_seed1.json": {
+      "shot": 5,
+      "num_images": 20,
+      "num_annotations": 20,
+      "class_annotation_counts": {
+        "Person": 5,
+        "Car": 5,
+        "Bicycle": 5,
+        "OtherVehicle": 5
+      }
+    },
+    "train_10shot_seed1.json": {
+      "shot": 10,
+      "num_images": 40,
+      "num_annotations": 40,
+      "class_annotation_counts": {
+        "Person": 10,
+        "Car": 10,
+        "Bicycle": 10,
+        "OtherVehicle": 10
+      }
+    }
+  }
+}

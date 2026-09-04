@@ -1,0 +1,414 @@
+{
+  "dataset": "TXL-PBC",
+  "source_split": "train",
+  "policy": "exact-K-instance (CD-FSOD official policy, cross-class disjoint images)",
+  "class_order": [
+    "WBC",
+    "RBC",
+    "Platelets"
+  ],
+  "category_ids": {
+    "WBC": 0,
+    "RBC": 1,
+    "Platelets": 2
+  },
+  "shots": [
+    1,
+    5,
+    10
+  ],
+  "seeds": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10
+  ],
+  "seeds_detail": {
+    "1": {
+      "WBC": [
+        "9f779a563e57556484ba4fcca87c2a9f",
+        "5363a62748bc5344970aa943e425e5b9",
+        "b9cbb0ddf8dc58a6aca3be62be134769",
+        "b3b6bdfcb7b15af59d54ea8f24aab0c4",
+        "30581cdf41f65660af113d0cfdaeabfd",
+        "7790329c133d55cab4efa466a3a87f95",
+        "d28bd056a2f15905b47c099c80d575e4",
+        "8b4b5c1a882e5023bea1c91c76f7c716",
+        "50309b206f1a57069115df97d6379055",
+        "9c950a4973995487aefacec4a827f8ca"
+      ],
+      "RBC": [
+        "d1460d11414c52e2ab498c4ee9080712",
+        "9a1c1be8a7b956d38f55e135282ebd6b",
+        "4520dae137375fc9b2154b2e17bd53d8",
+        "1fd7e0c9a85057cebd8982e886b41065",
+        "4826b0c9c9555003a9f16e8f5e310582",
+        "2fbbd5c6328e5dca8378eaccd231c9b7",
+        "4abdaba4d1cf542e963fdd851e74a75c",
+        "34f4f9fc8e395ebdb3b7e4ac58464d7e",
+        "aef7a720055f502ba64dadcd830ebd66",
+        "ab3baf8a60335d5d9b9eb5fd2951c8c7"
+      ],
+      "Platelets": [
+        "2128be0130da5e6b9079767d433b782c",
+        "2533891022425fe7b715ec783041648e",
+        "60561d7bda6a5c5da2f3be1db843c8cc",
+        "66e55fd4f84f5f7796a31f87f00856b1",
+        "5d6d61c8086a53bd891e789c27306237",
+        "c7465e5e71da55cabec381c233955a32",
+        "8005a90c6b895259a1872ad9989cb3df",
+        "0ac356883fcf517aab52444866d91647",
+        "41b95a2435d857a2a3e582d164de706d",
+        "09ef6ef10dc559a0a89330d977138ef3"
+      ]
+    },
+    "2": {
+      "WBC": [
+        "f68d131f429354bf9844b816e1a9308d",
+        "c9c642f2f0ef534b9b21de43c4df813c",
+        "ab3baf8a60335d5d9b9eb5fd2951c8c7",
+        "5571a70db655552cb4904d0cc1019bd6",
+        "41b95a2435d857a2a3e582d164de706d",
+        "12a2d34380745b0dbe3b59bca847ffb0",
+        "5906571473205468bc1aa7f400e23b34",
+        "5b5d3daf760852f79127664f81fe4558",
+        "76f1a646674f52d9a9c17df24ba5de8c",
+        "a6df035f247658cd8961b12c308f3917"
+      ],
+      "RBC": [
+        "ffefb97c1c305337957aafc0db40c688",
+        "df83ab6959c05048920a6fceb85e6f90",
+        "0d3c1e0afd8c578db9a04f6b0e2fe0de",
+        "f03b0087a85c5a38af53c52505fcbb57",
+        "89e8d1ea9a1450119d5e9b04fc61b17b",
+        "294ece317d2d55d9bc67a19fd9d6a3d1",
+        "a1a0a3595c075b3cab93e5027eb56e8a",
+        "a5a845682dc855f4b81a6afb8ab94258",
+        "31ee68fe30d55c71af2c0a05414ca343",
+        "68418752da7754269749cba11bdb5911"
+      ],
+      "Platelets": [
+        "4acbef21d5c755e785619b92a75d75ed",
+        "49a5ccd5ae86591ea91abe309e67c238",
+        "fd9d80acb85d56e2ac6de7722677e306",
+        "6d6f1f8b2df85248982d2399814ba16b",
+        "2446c076dcb455df870337be40bb4d3b",
+        "1b037690d20c5676b743864400cf3769",
+        "7250a44a12d053e38ef5ef99feb3ce56",
+        "0c28809d61af5eb18272868849a15bf2",
+        "4462714bf9545e52bf130b7c06b9d935",
+        "e0f9dbe8b0355abfa75ffc8950e5349b"
+      ]
+    },
+    "3": {
+      "WBC": [
+        "759ce245b9785759a381adec77ddf0db",
+        "1c9a8d0a34145787b4817562ff9e83f8",
+        "d015db76e04d52fcb612f9cfc2430feb",
+        "ca5a47671f405aa2a52f724ac198e98d",
+        "0e1562a3757551b7944bc37b57b5aab5",
+        "fb4717d6ef2c5797901c0bfcdf494b82",
+        "5a7e798c39bd5b3197f745d126d87ae2",
+        "6be4d8db0cd25b7084b919638da20d3b",
+        "955bfda96c125ba78ebd273a0483c10d",
+        "6a38e676976e5e1fbda7c9fcb685dbbe"
+      ],
+      "RBC": [
+        "3b0f6561493755dba667f52cc8d68ca4",
+        "5363a62748bc5344970aa943e425e5b9",
+        "a278b6efeb8e50d197520e4e391e27b1",
+        "d87c47b812555011a1ff86aee1540fc7",
+        "db08562188695316815cd083922a5ca3",
+        "5906571473205468bc1aa7f400e23b34",
+        "9aeeea4155be532f8e9381ae41d4c151",
+        "70f2d7bb573a56d0a6d47e1c4e2db3d6",
+        "c85594862e82575d9a067c29a40945b6",
+        "4abdaba4d1cf542e963fdd851e74a75c"
+      ],
+      "Platelets": [
+        "61bdd4f29c6954c49a252947d2c0ddf6",
+        "f386f74debc15f118211c0ef004d1272",
+        "040a7fc998e65588b43851c58f5eb930",
+        "6e4996fd7c2d5c96a110384a8e363375",
+        "7c36b3cc456055e0886e0988f0a75586",
+        "59956640091758f68c856115e66b94d5",
+        "13d52efc33085c2888033b162a76111f",
+        "f2470e16c710543cac1ed98920794749",
+        "be6df79d97c15916b69b0ad7f7b5a494",
+        "244dc623388a53fb94921a0341b71767"
+      ]
+    },
+    "4": {
+      "WBC": [
+        "db0a1793e20555afb4efcb76afa82149",
+        "83c6d191c47a57178ade960cdb4ab2b7",
+        "9b58c54c6d4356dcbd8e031b3b7ed4b4",
+        "ca5a47671f405aa2a52f724ac198e98d",
+        "066d8482b50056c395c4b79b651e28c8",
+        "9120869d87065920a79bff587f50fc4b",
+        "e24bc99ac89457c382c3cdc4621305e7",
+        "abab60f798d351d794b754717168d453",
+        "99cc8b7c127c5d04b7651d1ccbdcf6e8",
+        "5319d8b1ca7254aba3e4b69912a5a777"
+      ],
+      "RBC": [
+        "49a5ccd5ae86591ea91abe309e67c238",
+        "8b4b5c1a882e5023bea1c91c76f7c716",
+        "fd6784e64b0f53b6a5306f4021b9a0e9",
+        "e9d5d11caf225d2ea085b01571e7ddda",
+        "5363a62748bc5344970aa943e425e5b9",
+        "4acbef21d5c755e785619b92a75d75ed",
+        "13415cfc8d8c5cb9b06376ef91696157",
+        "77e72a43f25b513bb6b94ff41513cfc3",
+        "e908266bb7d8539688c82f5143ad9f8f",
+        "4f0da894f16a5844863d7d56d76389c9"
+      ],
+      "Platelets": [
+        "244dc623388a53fb94921a0341b71767",
+        "6948572233855838a22671400fc1e0e4",
+        "102ab2f4b8aa50ecb54c64e4f8eb28c8",
+        "7a78332281a65bdab5523f9d3a10eddf",
+        "7bf2cd7793b55069895434c4b01adefd",
+        "c00aebbce8ea562d9c0089b1408cbbb4",
+        "7250a44a12d053e38ef5ef99feb3ce56",
+        "c2e31d2f09ea5294ab5989a1ee315c24",
+        "2027b299e23c5f7ca12268151ef29850",
+        "3a7e5f4551eb55c389573178efd0182d"
+      ]
+    },
+    "5": {
+      "WBC": [
+        "d002185b02a75a4da5367392fe8e5fa0",
+        "e25bc64ff6d6529aaa4803ec52e87b62",
+        "0673cbd5a0495c788286ccd795150a87",
+        "1e0dc1a59bae539ab33913cf0b7a73e0",
+        "7ea134330b235166bb39b37092862466",
+        "89ac5bc9ed5057378f69b0e965fb6859",
+        "d7d341c4de01513685e5e98a70133338",
+        "a5842f0e2950532383c8e233d5c523b6",
+        "27a13b1c8ddd5b3a8af3848fdfade584",
+        "d11d77fcc2065c3f8a44b8755ecea2b3"
+      ],
+      "RBC": [
+        "66ed33cf0b475435825bfb6337cf7d81",
+        "f677c54320ce56e48eb518de1985d7a5",
+        "f0430fb7032f56da976458648ac6aa9d",
+        "547f6a15e96c5f869e5900da2d61a4bc",
+        "de3e7b1a1e805d3da9b63d4f8fe2cbc3",
+        "4d8cc35bd5fa585fa3e811180ceda03f",
+        "faf28e4105d25acc96e0a4390b5848a6",
+        "6d6541ab0bfc5a909456f55455794987",
+        "7b999a598143594099863e5a13b4e8b2",
+        "b638f74b24085b2abf9ad2e3004735ce"
+      ],
+      "Platelets": [
+        "6332d67aba2e55b181887e75aa71b362",
+        "b9d0813edca75f56b1b4a4635b90b49b",
+        "19977b60a4945539a6ace93d2bea6c27",
+        "3b0f6561493755dba667f52cc8d68ca4",
+        "5446c49284635ab8945aea99bad16da7",
+        "b60e204977cd574bbe062b5a1aeab06c",
+        "c69cb1cf4e9b5962bc6029bdba1e728e",
+        "105a3d2cb907559780d3ae1531f7d3f2",
+        "c2e31d2f09ea5294ab5989a1ee315c24",
+        "976b3d210bde5b5b99a8eb67fdf2bb93"
+      ]
+    },
+    "6": {
+      "WBC": [
+        "74cd000bc79d537db9e3d01a725cf21c",
+        "f6a4c49453845252afc7814d36d1fd68",
+        "a1890cb8a92e56cb8654ac95b9adb494",
+        "24f8290f7dcd50549c9f39d5648d12a5",
+        "c3c59a4a356353a59f989ccbc29e5c3b",
+        "e908266bb7d8539688c82f5143ad9f8f",
+        "7a78332281a65bdab5523f9d3a10eddf",
+        "e66dd870e93759a085981ee85459bdab",
+        "a33d0480f30a57e5b9201cf278a1e7aa",
+        "0b956a194c235a389e4ea5e7d3b5978e"
+      ],
+      "RBC": [
+        "1a61d0b0d52e51fb9a8cc5a6e7ca150d",
+        "89e8d1ea9a1450119d5e9b04fc61b17b",
+        "19977b60a4945539a6ace93d2bea6c27",
+        "7fa7b3c88b5a566f80944d8735f5def1",
+        "f0430fb7032f56da976458648ac6aa9d",
+        "d2373fd9dec55f5bb9b3f27e296ed174",
+        "6c5556c52d815ec8aac98a09c5f4b44d",
+        "6fd3789710685f44855e5339bd3b48d0",
+        "42064f5b3e3a50288a04a5a8f5fa3a2a",
+        "b638f74b24085b2abf9ad2e3004735ce"
+      ],
+      "Platelets": [
+        "4462714bf9545e52bf130b7c06b9d935",
+        "0ac356883fcf517aab52444866d91647",
+        "ad358ac80e2d54549f05750b22458931",
+        "638a62ab48df5e4b836add1b2809a97d",
+        "6f7a5b0229e45d6d825aaba95f96d112",
+        "d0be159ab9f15661a4ef675732bf9230",
+        "fac23e43876a595bb126c66d4a66469a",
+        "99e72be243ba5f12aa2ba4498278a088",
+        "755658968a5e51fd89ace8b1a8a315c4",
+        "a8ea74a0ce965fd6b475df7d9367facd"
+      ]
+    },
+    "7": {
+      "WBC": [
+        "92129d1652e75c3892beb376df57d274",
+        "f1469441b1785acdab70144cadbd42e4",
+        "6809dda9f25a5db287284160e5a6a7b4",
+        "c00aebbce8ea562d9c0089b1408cbbb4",
+        "dc303d7e550953a3a53ff0ae64670060",
+        "5a088493cf9b5fdcaf0d5c064b3ac617",
+        "ee79ae97a3735789b514f1c2ed8edeed",
+        "f8fa391df10951d69dae0dc741a6705d",
+        "114b3b73cd87571ca48e40558b43c2dc",
+        "e6d17dd6f14b5d38b670cdc2cf1f1151"
+      ],
+      "RBC": [
+        "9ad54048ad755276a28dd283555d78e1",
+        "d6ad3bd3e1045bbc9b043eea97f4d5a7",
+        "303d0f174a0b5c73aec4bac125a75edd",
+        "8f096029af47510dbc85f1e6fbef6fde",
+        "f8b16fc8725a543c8ad2449c14445468",
+        "ee025a33f33b50deb9b967a63c1d0294",
+        "2ee9115d01a559968fe1018ab56c2af9",
+        "deb404c164be59ebae9154536d71a55f",
+        "e08097d2dbac52bcbddf6c53bf790806",
+        "a989168e22eb522abb874e8ca7264c19"
+      ],
+      "Platelets": [
+        "0d4e8b9ed5715c518a1378cc733e05fd",
+        "0aacf6b0dd055b2e8614e21d111a7280",
+        "6a15c51322f454558ab82ad694971dfc",
+        "b989cca7c8d05e2a950c7711ac489e19",
+        "80aa9aa6bff75873b3c5ac1441fc0616",
+        "3c88fad4b1cd5021aaa6b4fbeaf3c4a4",
+        "08307eca22c25842ba8607446188cfe3",
+        "ea63f9c855675ee29d788388d98f41d6",
+        "a2076bb1b4005a328f3ee81f812c1007",
+        "d0be159ab9f15661a4ef675732bf9230"
+      ]
+    },
+    "8": {
+      "WBC": [
+        "27a13b1c8ddd5b3a8af3848fdfade584",
+        "ea55469cf0b650bdae0520230c18f895",
+        "f6a4c49453845252afc7814d36d1fd68",
+        "c8e966c0a1e250a6b8526f98cce0706f",
+        "ca5a47671f405aa2a52f724ac198e98d",
+        "c2e31d2f09ea5294ab5989a1ee315c24",
+        "c1380dbc4db4549f86e19f4f823f82a4",
+        "9aeeea4155be532f8e9381ae41d4c151",
+        "5a088493cf9b5fdcaf0d5c064b3ac617",
+        "140e63a75a0a579aa88503963ef40228"
+      ],
+      "RBC": [
+        "ff84147288635c7481d917f6a07ef33e",
+        "08dfe8b8140f5915ae670b4db6de8f55",
+        "4f0da894f16a5844863d7d56d76389c9",
+        "0e1badd9c8e1500bbe22d96d0f91a9ac",
+        "65a71d90f3df531c8a5e7770aab38ba7",
+        "def654c874625737b6662c0278ab8ca5",
+        "96764a0fd9a058fe8e4ecc1b0185c999",
+        "b39a362c2bec56d89b0a2df850258b06",
+        "a1fcb72778ea5aa296d091a2ef35efc8",
+        "0243909c29df5f76919fdbef062c52cc"
+      ],
+      "Platelets": [
+        "80aa9aa6bff75873b3c5ac1441fc0616",
+        "9e0904cb31d856ed8c8ca171bebab658",
+        "b16b14d2864e538cb77028ca988afe94",
+        "534be4fce1ff5a4dbfc58493a46a3d48",
+        "3a80330a047459cfb46847da2afdfa5f",
+        "09ef6ef10dc559a0a89330d977138ef3",
+        "3b0f6561493755dba667f52cc8d68ca4",
+        "faf28e4105d25acc96e0a4390b5848a6",
+        "9149dc9901345bb2b22035947fc21473",
+        "f921aac5a8ed569891cccaefa1469ba6"
+      ]
+    },
+    "9": {
+      "WBC": [
+        "b9f75b5968fc5be78cd70815fff09e50",
+        "07044c656b35502c8f578311e5e5e474",
+        "038dda795d5b544b9ca4ac3d56d0110b",
+        "35d5b77f875e51fd8975992cc8f8ea39",
+        "61f1d7192ecb5032b483c06b82f7e0c6",
+        "bfea48a8ad74510c827ed62f1ba02c9e",
+        "f176732e948d5065960f378bd7bf1ff7",
+        "7903919dc12a53f1bb2e55cda3ab07cc",
+        "a6df035f247658cd8961b12c308f3917",
+        "f0718df1bfee5c02b5f9b848542b765a"
+      ],
+      "RBC": [
+        "3536f02af10058c6881659bd171e3493",
+        "61bdd4f29c6954c49a252947d2c0ddf6",
+        "99e72be243ba5f12aa2ba4498278a088",
+        "afee70d5532652beb1ca56f99262606d",
+        "e0f9dbe8b0355abfa75ffc8950e5349b",
+        "1c0c4e7548f75fe79d72bcc01f041039",
+        "93e413c95568559bbcea3ee48927ccf1",
+        "b60e204977cd574bbe062b5a1aeab06c",
+        "d1bdae9a07b350e5a68a98883c03eb80",
+        "81f2fbebf75b52308ccbf0960ec6860f"
+      ],
+      "Platelets": [
+        "13415cfc8d8c5cb9b06376ef91696157",
+        "5a88d81e785851d5a4feb8d4b05a5016",
+        "2d259a20371e52f7abb7714288bdcced",
+        "be6df79d97c15916b69b0ad7f7b5a494",
+        "9a1c1be8a7b956d38f55e135282ebd6b",
+        "d87cac75f72e5614b1cbed610eb10054",
+        "c1ad7a24a2a35091a0973fbe21cf9392",
+        "e4eefa4c0a255bc3b36a8dd2c075fea9",
+        "6332d67aba2e55b181887e75aa71b362",
+        "c2e31d2f09ea5294ab5989a1ee315c24"
+      ]
+    },
+    "10": {
+      "WBC": [
+        "8d50f1971dd85882aa50d72988889b94",
+        "81d7a25cf55258b08d1ba536f3c307b1",
+        "9a1c1be8a7b956d38f55e135282ebd6b",
+        "7a78332281a65bdab5523f9d3a10eddf",
+        "d7d66a98ac9850c89e78d0d73ffcc0c2",
+        "46fa7c58d6525ad48f13c95dc5f7d1ef",
+        "dd1e8fbe108c519290120f5087d654d8",
+        "a1a0a3595c075b3cab93e5027eb56e8a",
+        "4318e856d6a45d08ad2d58353e599821",
+        "31bb11fdbdc2584d9c96afa1a312b9fb"
+      ],
+      "RBC": [
+        "13415cfc8d8c5cb9b06376ef91696157",
+        "a81f2801058554b5a7bafcf298ce0207",
+        "9aeeea4155be532f8e9381ae41d4c151",
+        "298b5f80bfce5f14bd7381c3922c98b9",
+        "3f34194997c05f3f8549ac1a5149f162",
+        "f427ce0d21895e93bc3578b3fc93713e",
+        "d2373fd9dec55f5bb9b3f27e296ed174",
+        "9cefeb09c72a5e79be73c2e3a7fad666",
+        "f1469441b1785acdab70144cadbd42e4",
+        "a989168e22eb522abb874e8ca7264c19"
+      ],
+      "Platelets": [
+        "0f9accfa2dd35e868678e3e1435439b4",
+        "61867264ba035645a478e86700ddb92e",
+        "1b037690d20c5676b743864400cf3769",
+        "d01ad376285155d4840bb7fbbec63e2a",
+        "ee025a33f33b50deb9b967a63c1d0294",
+        "568988fb843c5fb39242a24a7c2fb332",
+        "052cce7836c75e2484b141cd68950e2f",
+        "fd9d80acb85d56e2ac6de7722677e306",
+        "af385aa746c758469a8a19746e0ae3fe",
+        "9bfb01a4ee4a5486a3486cefa5e0e362"
+      ]
+    }
+  }
+}
